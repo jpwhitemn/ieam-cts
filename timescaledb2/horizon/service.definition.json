@@ -1,0 +1,44 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME for $ARCH",
+    "description": "CTS's TimescaleDB",
+    "public": false,
+    "documentation": "",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "sharable": "singleton",
+    "requiredServices": [],
+    "userInput": [
+        {
+            "name": "POSTGRES_DB",
+            "type": "string",
+            "defaultValue": "cts"
+        },
+        {
+            "name": "POSTGRES_USER",
+            "type": "string",
+            "defaultValue": "dbuser"
+        },
+        {
+            "name": "POSTGRES_PASSWORD",
+            "type": "string",
+            "defaultValue": "p@55w0rd"
+        }
+    ],
+    "deployment": {
+        "services": {
+            "${SERVICE_NAME}": {
+                "image": "${DOCKER_IMAGE_BASE}:$SERVICE_VERSION",
+                "privileged": false,
+                "network": "",
+                "secrets": {},
+                "user": "root:root",
+                "binds": [
+                    "/etc/localtime:/etc/localtime:ro",
+                    "timescaledb-data:/var/lib/postgresql/data:z"
+                ]
+            }
+        }
+    }
+}

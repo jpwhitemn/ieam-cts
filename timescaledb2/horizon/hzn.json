@@ -1,0 +1,8 @@
+{
+    "HZN_ORG_ID": "iottechsys",
+    "MetadataVars": {
+        "DOCKER_IMAGE_BASE": "jpwhite/timescaledb2",
+        "SERVICE_NAME": "timescaledb2",
+        "SERVICE_VERSION": "0.0.1"
+    }
+}
