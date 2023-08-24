@@ -61,27 +61,27 @@
         {
             "name": "GETIAPI_BASEURL",
             "type": "string",
-            "defaultValue": "http://needgeturl.com"
+            "defaultValue": "https://169.46.23.138/api/v1"
         },
         {
             "name": "GETIAPI_DATASETID",
             "type": "string",
-            "defaultValue": "needgetidatasetid"
+            "defaultValue": "64d6a447ca902ac0cf7d93b3"
         },
         {
             "name": "GETIAPI_MODELTEMPLATEID",
             "type": "string",
-            "defaultValue": "needgetimodeltemplateid"
+            "defaultValue": "Custom_Image_Classification_EfficinetNet-B0"
         },
         {
             "name": "GETIAPI_PROJECTID",
             "type": "string",
-            "defaultValue": "needgetiprojectid"
+            "defaultValue": "64d6a447ca902ac0cf7d93a8"
         },
         {
             "name": "GETIAPI_TASKID",
             "type": "string",
-            "defaultValue": "needgetiapitaskid"
+            "defaultValue": "64d6a447ca902ac0cf7d93ac"
         },        
         {
             "name": "GETIAPI_TRAINFROMSCRATCH",
@@ -91,12 +91,12 @@
         {
             "name": "GETIAPI_WORKSPACEID",
             "type": "string",
-            "defaultValue": "needgetiworkspaceid"
+            "defaultValue": "64d3e9eb5a54c7314aa5b484"
         },        
         {
             "name": "WRITABLE_INSECURESECRETS_GETI_SECRETS_SERVICEID",
             "type": "string",
-            "defaultValue": "needinsecuresecretsserviceid"
+            "defaultValue": "mVnIfKMILVmbAOCoIw0mKx3KzCTwNbdd:FjfOfGXmPQ8lZ2odEyfk9T2KWoUYClIh"
         }
         ],
     "deployment": {
